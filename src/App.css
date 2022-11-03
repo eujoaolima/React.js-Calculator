@@ -4,7 +4,8 @@
 
 body {
   margin: 0;
-  background: linear-gradient(45deg, palegreen, #61DBFB);
+  background: linear-gradient(45deg, palegreen, #333);
+  height: 97.5vh;
 }
 
 .calculator-grid {
@@ -18,7 +19,6 @@ body {
 .calculator-grid > button {
   cursor: pointer;
   font-size: 2rem;
-  border: 1px solid white;
   outline: none;
   background-color: rgba(255, 255, 255, .75);
   border: 1px solid #aaa;
@@ -31,6 +31,13 @@ body {
 
 .span-two {
   grid-column: span 2;
+}
+
+.span-two.equal {
+  color: #67298b;
+}
+.span-two.clean {
+  color: crimson;
 }
 
 .output {
